@@ -1,5 +1,5 @@
 /*
- * main.css v0.5.0 
+ * main.css v0.6.0 
  * Update : 2019.09.20
  * Author : JiYoul.Choi
 */
@@ -41,7 +41,8 @@ section{
     width: 10%;
     height: 50%;
     border: 1px solid black;
-    color:#ffaa00;
+    color: red;
+    background-color: palevioletred
 }
 .section1{
     background-color: blueviolet;
@@ -50,7 +51,22 @@ section{
     text-align: center;
     background-color: aqua;
 }
-
+.article-3rd-bg{
+    text-align: center;
+    background-color: greenyellow;
+}
+.article-4th-bg{
+    text-align: center;
+    background-color: salmon;
+}
+.article-5th-bg{
+    text-align: center;
+    background-color: wheat;
+}
+.article-6th-bg{
+    text-align: center;
+    background-color: royalblue;
+}
 .image-cropper-50{
     height: 200px;
     margin: 15px;
@@ -81,4 +97,43 @@ section{
     -o-border-radius:5%;
     border-radius:5%;
 }
+table{
+    margin: 0% auto;
+}
 
+div {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+div.left {
+    width: 50%;
+    float: left;
+    box-sizing: border-box; 
+    background-image: url(https://3.bp.blogspot.com/-R--B1fo7MCQ/XBuqzzumRAI/AAAAAAABU3s/D3B8_Kwh1bwCci-zEkbm7N9bA-zs704kwCLcBGAs/s1600/Honeycam%2B2018-12-20%2B23-44-08.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.left p{
+    color: red;
+    display: block;
+   margin-top: 250px;
+   text-align:right;
+}
+div.right {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    background-image: url(https://fimg4.pann.com/new/download.jsp?FileID=47081920);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.right p{
+    color: blue;
+    display: block;
+   margin-top: 250px;
+   text-align:left;
+}
