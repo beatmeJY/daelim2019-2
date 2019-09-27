@@ -1,4 +1,8 @@
-/* v0.4.0 */
+/*
+ * main.css v0.3.0 
+ * Update : 2019.09.20
+ * Author : JiYoul.Choi
+*/
 ul{
     height: 30px;
     background: rgb(11, 0, 110);
@@ -8,34 +12,73 @@ ul{
 ul li{
     float: left;
     margin-right: 60px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
 }
 ul li a{
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
+article{
+    text-align:center;
+    padding-bottom: 50px;
+}
 section{
-    padding-bottom: 100px;
+    text-align:center;
+
 }
 
-div {
+.box-t {
     line-height: 50px;
     text-align:center;
     display: inline-block;
     list-style: none;
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    height: 50%;
     border: 1px solid black;
     color:#ffaa00;
 }
 .section1{
     background-color: blueviolet;
 }
-
-
-h1 {
-    color: blue;
-    font-style: italic;
+.article-2nd-bg{
+    text-align: center;
+    background-color: aqua;
 }
+
+.image-cropper-50{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+}
+.image-cropper-25{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:25%;
+    -moz-border-radius:25%;
+    -ms-border-radius:25%;
+    -o-border-radius:25%;
+    border-radius:25%;
+}
+.image-cropper-5{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+    border-radius:5%;
+}
+
