@@ -3,8 +3,13 @@
  * Update : 2019.09.20
  * Author : JiYoul.Choi
 */
+h2{
+    margin: 0px;
+}
 ul{
-    height: 30px;
+    margin: 0px;
+    font-family: 'Stylish', sans-serif;
+    height: 40px;
     background: rgb(11, 0, 110);
     list-style: none;
     padding-top: 15px;
@@ -12,23 +17,21 @@ ul{
 ul li{
     float: left;
     margin-right: 60px;
-    font-size: 16px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
 }
 ul li a{
-    font-size: 16px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 article{
     text-align:center;
-    padding-bottom: 50px;
 }
 section{
     text-align:center;
-
 }
 
 .box-t {
@@ -36,15 +39,16 @@ section{
     text-align:center;
     display: inline-block;
     list-style: none;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 0px 10px 150px 10px;
     width: 10%;
     height: 50%;
-    border: 1px solid black;
+    border: 5px solid black;
     color: red;
-    background-color: palevioletred
+    background-color: greenyellow;
 }
 .section1{
+    padding: 20px 0 100px 0;
     background-color: blueviolet;
 }
 .article-2nd-bg{
@@ -60,13 +64,27 @@ section{
     background-color: salmon;
 }
 .article-5th-bg{
+    clear: both;
     text-align: center;
     background-color: wheat;
 }
 .article-6th-bg{
+    clear: both;
     text-align: center;
     background-color: royalblue;
 }
+.article-7th-bg{
+    clear: both;
+    text-align: center;
+    background-color: fuchsia;
+}
+.article-8th-bg{
+    clear: both;
+    text-align: center;
+    background-color: chocolate;
+}
+
+
 .image-cropper-50{
     height: 200px;
     margin: 15px;
@@ -101,13 +119,9 @@ table{
     margin: 0% auto;
 }
 
-div {
-    width: 100%;
+div.left {
     height: 500px;
     border: 1px solid #000;
-}
-
-div.left {
     width: 50%;
     float: left;
     box-sizing: border-box; 
@@ -123,6 +137,8 @@ div.left p{
    text-align:right;
 }
 div.right {
+    height: 500px;
+    border: 1px solid #000;
     width: 50%;
     float: right;
     box-sizing: border-box;
@@ -136,4 +152,40 @@ div.right p{
     display: block;
    margin-top: 250px;
    text-align:left;
+}
+.grid-container {
+    clear: both;
+    display: grid;
+    grid-gap: 10px;
+    background-color: red;
+    padding: 10px;
+  }
+  .grid-container div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.item1 {
+    grid-column: 1 / span 3;
+}
+.item2 {
+    grid-column: 1 / span 2;
+}
+.item3 {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+.item10 {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+}
+aside{
+    border: 5px solid blue ;
+}
+aside div {
+    font-family: 'Stylish', sans-serif;
+    background-color: white;
+    padding: 0 0 100px 0;
+    font-size: 25px;
 }
