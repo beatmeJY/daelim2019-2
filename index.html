@@ -10,21 +10,49 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet"> <!-- 폰트 링크 -->
     <title>최지율</title>
 </head>
 <body>
-    <header>Header 영역</header>
+        <!-- 맨위 떠있는 메뉴 -->
     <nav>
-        <ul>
-            <li>최지율</li>
-            <li><a href="#111">메뉴1</a></li>
+        <ul class="main-menu">
+            <li class="logo-image">최지율</li>
+            <li>
+                <a href="#111">메뉴1</a>
+                <ul class="sub-menu">
+                    <li><a href="#111">서브1</a></li>
+                    <li><a href="#111">서브2</a></li>
+                    <li><a href="#111">서브3</a></li>
+                    <li class="sub-finish"><a href="#111">서브4</a></li>
+                </ul>
+            </li>
             <li><a href="#222">메뉴2</a></li>
             <li><a href="#333">메뉴3</a></li>
             <li><a href="#444">메뉴4</a></li>
             <li><a href="#555">메뉴5</a></li>
         </ul>
     </nav>
+
+    <!-- 10월 11일 : 풀스크린 백그라운드 헤더 -->
+    <header class="full-bg">
+        <div class="container">
+            <div class="header-title">
+                Choi Ji Youl 홈페이지
+                <p class="header-sub-title">
+                    최지율의 홈페이지 입니다.<br />
+                    2019년 2학기 실습 내용을 정리했습니다.
+                </p>
+            </div>
+            <br />
+            <div class="header-ghost">
+                <a href="">여기에 마우스를 올려보세요.</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 블록실습 3개 -->
     <article>
         <section class="section1">
             <h2>9월 20일 : display 실습</h2>
@@ -33,12 +61,16 @@
             <div class="box-t">블록3</div>
         </section>
     </article>
+
+    <!-- image 3개 크로퍼 주기 -->
     <a name="111"><article class="article-2nd-bg">
         <h2>9월 27일 : image 실습</h2>
         <img class="image-cropper-50" src="./images/beoc-flowers-2382802_640.jpg" alt="이미지 연습">
         <img class="image-cropper-25" src="./images/beoc-flowers-2382802_640.jpg" alt="이미지 연습">
         <img class="image-cropper-5" src="./images/beoc-flowers-2382802_640.jpg" alt="이미지 연습">
     </article>
+
+    <!-- audio, video 태그로 만들기 -->
     <article class="article-3rd-bg">
         <section>
             <h2>9월 27일 : audio, video 태그 사용하기</h2>
@@ -49,7 +81,7 @@
         </section>
         <section>
             <h3>video tag</h3>
-            <video controls>
+            <video controls>  <!-- 비디오 확장자 다써주면 순서대로 확장프로그램에 맞게 선택하여 씀 -->
                 <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm"/>
                 <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogv"/>
                 <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
@@ -57,6 +89,8 @@
             </video>
         </section>
     </article>
+
+    
     <article class="article-4th-bg">
         <h2>9월 27일 : youtube 영상 넣기</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ag25PknmsOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

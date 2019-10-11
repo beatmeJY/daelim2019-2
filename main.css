@@ -6,27 +6,7 @@
 h2{
     margin: 0px;
 }
-ul{
-    margin: 0px;
-    font-family: 'Stylish', sans-serif;
-    height: 40px;
-    background: rgb(11, 0, 110);
-    list-style: none;
-    padding-top: 15px;
-}
-ul li{
-    float: left;
-    margin-right: 60px;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-}
-ul li a{
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
+
 article{
     text-align:center;
 }
@@ -47,6 +27,8 @@ section{
     color: red;
     background-color: greenyellow;
 }
+
+/* 배경색깔 순서대로 */
 .section1{
     padding: 20px 0 100px 0;
     background-color: blueviolet;
@@ -84,7 +66,7 @@ section{
     background-color: chocolate;
 }
 
-
+/* 이미지 동그랗게 만들기 3개 연습 */
 .image-cropper-50{
     height: 200px;
     margin: 15px;
@@ -119,6 +101,7 @@ table{
     margin: 0% auto;
 }
 
+/* 두개의 창으로 나눔 */
 div.left {
     height: 500px;
     border: 1px solid #000;
@@ -142,7 +125,7 @@ div.right {
     width: 50%;
     float: right;
     box-sizing: border-box;
-    background-image: url(https://fimg4.pann.com/new/download.jsp?FileID=47081920);
+    background-image: url(http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2018/09/30/h49KlEvzFtV4636739092881310453.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,6 +136,8 @@ div.right p{
    margin-top: 250px;
    text-align:left;
 }
+
+/* 그리드로 표만들기 */
 .grid-container {
     clear: both;
     display: grid;
@@ -184,8 +169,67 @@ aside{
     border: 5px solid blue ;
 }
 aside div {
-    font-family: 'Stylish', sans-serif;
+    font-family: 'Stylish', sans-serif; 
     background-color: white;
     padding: 0 0 100px 0;
     font-size: 25px;
+}
+
+/* 10월11일 실습 : 헤더에 백그라운드 사진넣고 ghost등 연습함 */
+.full-bg{
+    background: url(./images/beoc-flowers-2382802_640.jpg) no-repeat center center fixed; /* no-repeat = 반복하여 사진 넣지않음 */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+.container{
+    display: table-cell;
+    text-align: center;
+}
+.header-title{
+    margin-top : 170px;
+    border-radius:50%;  /* 원 동그랗게 만듬 */
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 80px;
+    background: rgba(247, 235, 129, 0.9);
+    color:rgb(255, 41, 41);
+}
+.header-sub-title{
+    font-size:25px;
+    color: rgb(245, 105, 11);
+}
+
+.header-ghost{
+    display: inline-block;
+    width: 20%;
+    height: 60px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-top: 130px ;
+    border: 10px dashed rgb(255, 102, 255);
+    background: rgb(255, 162, 255);
+    font-size: 25px;
+}
+
+.header-ghost a{
+    text-decoration: none;
+    color:rgb(255, 215, 162);
+}
+/* 마우스 오버했을시 배경색 바꾸고 선도 outset을 사용해 이쁘게 바꿨음  */
+.header-ghost:hover{
+    border: 10px outset rgb(176, 79, 255);
+}
+/* 마우스 오버했을시 글씨색도 바꿈 */
+.header-ghost:hover a{
+    color:#fff;
 }

@@ -1,0 +1,73 @@
+.main-menu .logo-image{
+    margin: 0px;
+    padding: 10px 30px;
+    border: none;
+    color: rgb(53, 53, 53);
+    border-right: 1px solid rgb(121, 99, 0);
+}
+
+.main-menu{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Stylish', sans-serif;
+    height: 55px;
+    background: rgb(255, 187, 0);   
+    list-style: none;
+}
+.main-menu li{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 187, 0);
+    
+    
+    float: left;
+    font-size: 30px;
+    border-right: 1px solid rgb(121, 99, 0);
+}
+.main-menu li a{
+    font-size: 30px;
+    color: rgb(255, 0, 170);
+    font-weight: bold;
+    text-decoration: none;
+
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+}
+.main-menu li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu .sub-menu{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    border-right: none;
+
+}
+
+.main-menu .sub-menu li{
+    float: none;
+    background: rgb(255, 202, 89);
+    border-bottom: 1px solid  rgb(121, 99, 0);
+    border-right: none;
+}
+.main-menu .sub-menu li a{
+    color: #fff;
+}
+
+
+.main-menu .sub-menu .sub-finish{
+    border-bottom: none;
+}
