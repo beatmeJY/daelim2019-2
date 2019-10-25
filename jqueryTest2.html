@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>jqueryTest</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+  <script>
+    // 이벤트 연결
+    $(document).ready(function() {
+      // 1번 방법 : 'img'태그에 속성들을 하나하나 적용한다.
+      // var src = $('img').attr('alt', '독도'); //alt = '독도'
+      // var src = $('img').attr('src', 'https://s.pstatic.net/static/www/mobile/edit/2019/1024/mobile_151257937693.png' ); //src 로 이미지 링크 연결
+      // var src = $('img').attr('width', '300px'); // 길이 조정
+      // var src = $('img').attr('height', '100px'); // 높이 조정
+
+
+      // 2번 방법 : 'img'태그에 속성들을 한번에 적용한다.
+      var src = $('img').attr({
+      alt : '독도',
+      src : 'https://s.pstatic.net/static/www/mobile/edit/2019/1024/mobile_151257937693.png' ,
+      width : 300,
+      height : 100});
+
+      // 출력합니다
+      // $('body').append(src);
+    });
+  </script>
+</head>
+<body>
+    <img> <!-- 여기에 위의 스크립트로 속성 적용함 -->
+    <img> <!-- 여기에 위의 스크립트로 속성 적용함 -->
+    <img> <!-- 여기에 위의 스크립트로 속성 적용함 -->
+</body>
+</html>

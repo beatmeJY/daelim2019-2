@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Event Basic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+
+<script>
+  $(document).ready(function(){
+    $('button').click(function() {
+        $('.page').fadeToggle('slow');
+    });
+  });
+  </script>
+</head>
+<body>
+  <button>Toggle Show</button>
+  <div class="page">
+    <h1>여기는 출력용이여서</h1>
+    <p>아무 글씨나 치는중인것이다</p>
+  </div>
+</body>
+</html>
