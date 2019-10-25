@@ -1,7 +1,15 @@
 # 최지율 : daelim2019-2 project
 
+## 2019.10.25
+#### jqeuryTest.html / jqeuryTest2.html / jqeuryTest3.html / jqeuryTest4.html생성
+1. JQeury 링크걸어서 연습
+2. attr, ready 등 연습
+3. mouseenter, mouseleave 연습
+4. fadeToggle, animate 연습
+5. frames 연습
+
 ## 2019.10.23
-#### DOM_Basic / DOM_Basic2 / DOM_Time 생성
+#### DOM_Basic.html / DOM_Basic2.html / DOM_Time.html 생성
 1. 메뉴2에 서브메뉴 만들고 target="_blank" 로 새창으로 링크걸기
 2. document.getElementById 사용하기
 3. innerHTML 사용하기
