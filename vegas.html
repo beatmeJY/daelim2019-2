@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+  <script src="js/vegas.min.js"></script>
+  <link rel="stylesheet" href="css/vegas.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    $("body").vegas({
+        slides: [
+            {   src: 'images/arctic-fox-1170655_1920.jpg' },
+            {   src: 'images/penguin-429125_1920.jpg',
+                video: {
+                    src: [
+                      'videos/Robin.mp4',
+                      'videos/Robin.webm',
+                      'videos/Robin.ogv'
+                    ],
+                    loop: false,
+                    mute: true
+                }
+            }
+        ]
+    });
+  </script>
+</body>
+</html>
