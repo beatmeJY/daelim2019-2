@@ -1,5 +1,12 @@
 # 최지율 : daelim2019-2 project
 
+## 2019.11.08
+#### infinityScroll.html / blackstretch.html / vegas.html / youtube.html 생성
+1. infinityScroll로 스크롤이 계속 생기는것을 연습함
+2. blackstretch jquery를 사용해서 사진 애니메이터 효과
+3. vegas jquery를 사용해서 부드러운 동영상 재생
+4. jquery 를 사용해서 유튜브 백그라운드 설정
+
 ## 2019.10.25
 #### jqeuryTest.html / jqeuryTest2.html / jqeuryTest3.html / jqeuryTest4.html생성
 1. JQeury 링크걸어서 연습

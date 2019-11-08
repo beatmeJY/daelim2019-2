@@ -1,0 +1,235 @@
+/*
+ * main.css v0.10.0 
+ * Update : 2019.10.25
+ * Author : JiYoul.Choi
+*/
+h2{
+    margin: 0px;
+}
+
+article{
+    text-align:center;
+}
+section{
+    text-align:center;
+}
+
+.box-t {
+    line-height: 50px;
+    text-align:center;
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+    padding: 0px 10px 150px 10px;
+    width: 10%;
+    height: 50%;
+    border: 5px solid black;
+    color: red;
+    background-color: greenyellow;
+}
+
+/* 배경색깔 순서대로 */
+.section1{
+    padding: 20px 0 100px 0;
+    background-color: blueviolet;
+}
+.article-2nd-bg{
+    text-align: center;
+    background-color: aqua;
+}
+.article-3rd-bg{
+    text-align: center;
+    background-color: greenyellow;
+}
+.article-4th-bg{
+    text-align: center;
+    background-color: salmon;
+}
+.article-5th-bg{
+    clear: both;
+    text-align: center;
+    background-color: wheat;
+}
+.article-6th-bg{
+    clear: both;
+    text-align: center;
+    background-color: royalblue;
+}
+.article-7th-bg{
+    clear: both;
+    text-align: center;
+    background-color: fuchsia;
+}
+.article-8th-bg{
+    clear: both;
+    text-align: center;
+    background-color: chocolate;
+}
+
+/* 이미지 동그랗게 만들기 3개 연습 */
+.image-cropper-50{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+}
+.image-cropper-25{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:25%;
+    -moz-border-radius:25%;
+    -ms-border-radius:25%;
+    -o-border-radius:25%;
+    border-radius:25%;
+}
+.image-cropper-5{
+    height: 200px;
+    margin: 15px;
+    width: 150px;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+    border-radius:5%;
+}
+table{
+    margin: 0% auto;
+}
+
+/* 두개의 창으로 나눔 */
+div.left {
+    height: 500px;
+    border: 1px solid #000;
+    width: 50%;
+    float: left;
+    box-sizing: border-box; 
+    background-image: url(https://3.bp.blogspot.com/-R--B1fo7MCQ/XBuqzzumRAI/AAAAAAABU3s/D3B8_Kwh1bwCci-zEkbm7N9bA-zs704kwCLcBGAs/s1600/Honeycam%2B2018-12-20%2B23-44-08.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.left p{
+    color: red;
+    display: block;
+   margin-top: 250px;
+   text-align:right;
+}
+div.right {
+    height: 500px;
+    border: 1px solid #000;
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    background-image: url(http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2018/09/30/h49KlEvzFtV4636739092881310453.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.right p{
+    color: blue;
+    display: block;
+   margin-top: 250px;
+   text-align:left;
+}
+
+/* 그리드로 표만들기 */
+.grid-container {
+    clear: both;
+    display: grid;
+    grid-gap: 10px;
+    background-color: red;
+    padding: 10px;
+  }
+  .grid-container div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.item1 {
+    grid-column: 1 / span 3;
+}
+.item2 {
+    grid-column: 1 / span 2;
+}
+.item3 {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+.item10 {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+}
+aside{
+    border: 5px solid blue ;
+}
+aside div {
+    font-family: 'Stylish', sans-serif; 
+    background-color: white;
+    padding: 0 0 100px 0;
+    font-size: 25px;
+}
+
+/* 10월11일 실습 : 헤더에 백그라운드 사진넣고 ghost등 연습함 */
+.full-bg{
+    background: url(../images/beoc-flowers-2382802_640.jpg) no-repeat center center fixed; /* no-repeat = 반복하여 사진 넣지않음 */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+.container{
+    display: table-cell;
+    text-align: center;
+}
+.header-title{
+    margin-top : 170px;
+    border-radius:50%;  /* 원 동그랗게 만듬 */
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 80px;
+    background: rgba(247, 235, 129, 0.9);
+    color:rgb(255, 41, 41);
+}
+.header-sub-title{
+    font-size:25px;
+    color: rgb(245, 105, 11);
+}
+
+.header-ghost{
+    display: inline-block;
+    width: 20%;
+    height: 60px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-top: 130px ;
+    border: 10px dashed rgb(255, 102, 255);
+    background: rgb(255, 162, 255);
+    font-size: 25px;
+}
+
+.header-ghost a{
+    text-decoration: none;
+    color:rgb(255, 215, 162);
+}
+/* 마우스 오버했을시 배경색 바꾸고 선도 outset을 사용해 이쁘게 바꿨음  */
+.header-ghost:hover{
+    border: 10px outset rgb(176, 79, 255);
+}
+/* 마우스 오버했을시 글씨색도 바꿈 */
+.header-ghost:hover a{
+    color:#fff;
+}
