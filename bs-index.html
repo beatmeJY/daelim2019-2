@@ -1,0 +1,207 @@
+<!--
+ * index.html v0.12.0
+ * Update : 2019.11.15
+ * Author : JiYoul.Choi
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="CJY"/>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="icon" href="./images/favicon.ico">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <title>bs-index</title>
+</head>
+<body>
+  <style>
+    .row{
+      text-align: center;
+    }
+  </style>
+<nav class="navbar navbar-expand-lg navbar-collapse bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container-fluid">      
+    <article class="row">
+      <section class="col-6 col-sm-6 bg-danger">
+        <!-- 버튼연습 -->
+              <button type="button" class="btn btn-primary btn-block">Primary</button> <!-- btn-block 블럭 버튼(한줄 꽉참)-->
+              <button type="button" class="btn btn-secondary btn-lg">Secondary</button> <!-- btn-lg 큰 버튼-->
+              <button type="button" class="btn btn-success btn-sm">Success</button> <!-- btn-sm 작은 버튼-->
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+              <button type="button" class="btn btn-link">Link</button>
+              <br>
+              <!-- 라이도버튼 연습 -->
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 라디오 버튼 1
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> 라디오 버튼 2
+                  </label>
+                  <label class="btn btn-light">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> 라디오 버튼 3
+                  </label>
+                </div>
+      </section>
+      <section class="col-6 col-sm-6 bg-success">
+          <p>
+              <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">첫번째 토글</a>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">두번째 토글</button>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">전체 토글</button>
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    나는 첫번째 토글입니다.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    나는 두번째 토글입니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+    </article>
+    <article class="row">
+      <section class="col-12 col-sm-12 bg-success">
+          <div class="bd-example">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/penguin-429125_1920.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>첫번째 슬라이드</h5>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/polar-bear-4496437_1920.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>두번째 슬라이드</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/arctic-fox-1170655_1920.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>세번째 슬라이드</h5>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                
+              </div>
+            </div>
+      </section>
+    </article>
+    <article class="row">
+      <section class="col-6 col-sm-6 bg-dark">
+        <!-- Modal 버튼 트리거 -->
+        <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#exampleModal">
+          <p><br><br><br><br>Modal 실행하기<br><br><br><br></p>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal 연습창</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                이것은 새창입니다 저장하고 닫으시겠습니까?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary">저장하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="col-6 col-sm-6 bg-success">
+          <br>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+            <br>
+      </section>
+    </article>
+  </div>  
+<br>
+</main>
+</body>
+</html>

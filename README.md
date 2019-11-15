@@ -1,5 +1,10 @@
 # 최지율 : daelim2019-2 project
 
+## 2019.11.15
+#### bs-index.html / bootstrap.min.css/js파일 생성
+1. favicon 만들어서 넣음
+2. bootstrap 거의 다 연습함 (navbar, button, toggle, Modal 등등)
+
 ## 2019.11.08
 #### infinityScroll.html / blackstretch.html / vegas.html / youtube.html 생성
 1. infinityScroll로 스크롤이 계속 생기는것을 연습함
